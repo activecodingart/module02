@@ -1,0 +1,135 @@
+
+@media screen and (min-width: 480px)
+	@include grid(".col-xs-")
+	[class*="col-xs-"]
+		float: left
+	.clients__box
+		width: 33.33333%
+	
+@media screen and (min-width: 768px)
+	@include grid(".col-sm-")
+	[class*="col-sm-"]
+		float: left
+	.container
+		max-width: 750px
+	.pricing-tables
+		border-radius: 6px
+		overflow: hidden
+		box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.15)
+	.table
+		margin-bottom: 0
+	.table-1
+		border-right: 1px solid $lightgrey
+	.clients__box
+		width: 16.66667%
+	.footer__logo
+		margin: 0 26px 138px 0
+
+@media screen and (min-width: 992px)
+	@include grid(".col-md-")
+	[class*="col-md-"]
+		float: left
+	.container
+		max-width: 970px
+	.slider__desc
+		padding: 60px 15px 60px
+	.footer__logo
+		margin: 0 26px 60px 0
+
+@media screen and (min-width: 1200px)
+	@include grid(".col-lg-")
+	[class*="col-lg-"]
+		float: left
+	.container
+		max-width: 1170px
+	.slider__desc
+		padding: 110px 15px 60px
+
+@media screen and (max-width: 768px)
+	body
+		padding-top: 70px
+	.header__logo img
+		top: 35px
+	
+	.mobile-menu-btn
+		padding: 12px 12px 8px
+		display: block
+		line-height: 0
+		&:focus
+			outline-color: transparent
+		&:hover
+			cursor: pointer
+		.icon-bar
+			display: block
+			border-top: 1px solid $greyblue
+			border-bottom: 1px solid $greyblue
+			margin-bottom: 4px
+			width: 24px
+			background: $green
+			line-height: 0
+			+transition()
+	
+	button.show-menu
+		.icon-bar
+			&:nth-child(1)
+				transform: rotate(135deg) translate3d(4px, -6px, 0)
+			&:nth-child(2)
+				opacity: 0
+				transform: translate3d(20px, 0, 0)
+			&:nth-child(3)
+				transform: rotate(-135deg) translate3d(2px, 5px, 0)
+	
+	.navbar
+		float: none
+		margin-left: 0
+		margin: 70px -15px 0
+		overflow: hidden
+		height: 0
+		min-height: auto
+		+transition()
+	
+	.navbar.show-menu
+		height: 210px
+	
+	.navbar__nav
+		border-top: 1px solid $brightgrey
+		li
+			float: none
+			margin-right: 0
+			text-align: center
+		a
+			line-height: 52px
+			display: inline-block
+			&:after
+				bottom: 14px
+	
+	.section-title
+		font-size: 5rem
+	.section-desc
+		font-size: 2.1rem
+
+@media screen and (max-width: 767px)
+	.footer
+		form
+			display: flex
+			justify-content: center
+			margin-top: 60px
+	.table
+		border-radius: 6px
+		box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.15)
+
+@media screen and (max-width: 480px)
+	.section-title
+		font-size: 4rem
+	.section-desc
+		font-size: 2rem
+	.features
+		padding: 70px 0 0
+	.footer__logo
+		margin: 0 26px 100px 0
+
+@media screen and (max-width: 374px)
+	.section-title
+		font-size: 3.3rem
+	.section-desc
+		font-size: 1.9rem
