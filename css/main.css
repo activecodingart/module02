@@ -380,6 +380,9 @@ p {
 .features-list .unavailable {
   color: #bfc7ce;
 }
+.features-list .unavailable:before {
+  content: "";
+}
 
 .table-3 {
   background: #39add1;
